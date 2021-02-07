@@ -1,0 +1,17 @@
+<div class="contents_form">
+  <div class="container_box">
+    <% if flash[:notice] %>
+      <p><%= flash[:notice] %></p>
+    <% end %>
+    
+    <%= link_to "新規投稿", "/tweets/new" %>
+    
+    <ul>
+    <% @tweets.each do |tweet| %>
+      <li><%= tweet.name  %></li> 
+      <li><%= link_to(tweet.content, "/tweets/#{tweet.id}") %></li>
+          <p>--------------------------</p>
+    <% end %>
+    </ul>
+  </div>
+</div>

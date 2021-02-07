@@ -1,0 +1,23 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.container_box {
+ text-align: auto;
+}
+
+.container {
+  margin: 10px 50px 10px 10px;
+ display: block;
+}
+
+.btn {
+    margin: 1% 0;
+   background: #ggg;
+    color: #fff;
+    width: auto;
+    float: auto;
+}
+
+ul {
+  list-style: none;
+}

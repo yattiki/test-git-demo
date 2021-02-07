@@ -1,0 +1,11 @@
+<% if flash[:danger] %>
+  <p><%= flash[:danger] %></p>
+<% end %>
+<h1>新規投稿</h1>
+　<%= form_with(model: @tweet, local: true) do |f|  %>
+　　<%= f.label :name %>
+　　<%= f.text_field :name, class: 'container' %>
+　　<%= f.label :content %>
+　　<%= f.text_area :content, class: 'container' %>
+　　<%= f.submit "投稿する", class: "btn btn-primary" %>
+　<% end %>
