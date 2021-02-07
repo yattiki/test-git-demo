@@ -5,13 +5,14 @@
     <% end %>
     
     <%= link_to "新規投稿", "/tweets/new" %>
+    <p>--------------------------</p>
     
     <ul>
-    <% @tweets.each do |tweet| %>
-      <li><%= tweet.name  %></li> 
-      <li><%= link_to(tweet.content, "/tweets/#{tweet.id}") %></li>
-          <p>--------------------------</p>
-    <% end %>
+      <% @tweets.each do |tweet| %>
+        <li><%= tweet.name  %></li> 
+        <li><%= link_to(tweet.content, "/tweets/#{tweet.id}") %></li>
+        <p>--------------------------</p>
+      <% end %>
     </ul>
   </div>
 </div>
